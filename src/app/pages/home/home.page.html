@@ -9,7 +9,7 @@
   <ion-button [routerLink]="['/action-sheet']" routerLinkActive="router-link-active" >Action Sheet</ion-button>
   <ion-list>
     <ion-item [routerLink]="item.redirectTo" routerLinkActive="router-link-active"  detail *ngFor="let item of componentes">
-      <ion-icon [name]="item.icon"></ion-icon>
+      <ion-icon [name]="item.icon" slot="start"></ion-icon>
       <ion-label>{{item.name}}</ion-label>
     </ion-item>
     <ion-item [routerLink]="['/action-sheet']" routerLinkActive="router-link-active" >
