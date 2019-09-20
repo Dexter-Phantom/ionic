@@ -7,6 +7,28 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
-
+<ion-content padding>
+  <ion-button (click)="presentAlert()" color="primary" expand="full">
+    Alert basic
+  </ion-button>
+  <br>
+  <ion-button expand="full" (click)="presentAlertMultipleButtons()" color="secondary">
+    Alert multiple buttons
+  </ion-button>
+  <br>
+  <ion-button expand="full" (click)="alertConfirm()" color="tertiary">
+    Alert confirm
+  </ion-button>
+  <br>
+  <ion-button expand="full" (click)="alertPrompt()" color="success">
+    Alert prompt
+  </ion-button>
+  <br>
+  <ion-button expand="full" (click)="presentAlertRadio()" color="warning">
+    Alert radio
+  </ion-button>
+  <br>
+  <ion-button expand="full" (click)="presentAlertCheckbox()" color="danger">
+    Alert checkbox
+  </ion-button>
 </ion-content>
