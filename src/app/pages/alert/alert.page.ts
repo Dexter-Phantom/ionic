@@ -9,7 +9,7 @@ import { AlertController } from '@ionic/angular';
 export class AlertPage implements OnInit {
 
   since: string = 'Hello';
-
+  title: string = null;
   constructor(public alertCtrl: AlertController) { }
 
   ngOnInit() {
@@ -274,5 +274,39 @@ export class AlertPage implements OnInit {
     await alert.present();
   }
 
+
+  async alertToast() {
+    const toast = await this.alertCtrl.create(
+      {
+        backdropDismiss: false,
+        header: 'Input your name',
+        inputs: [
+          {
+            type: 'text',
+            placeholder: 'Input your name',
+            name: 'yourName',
+            min: 5
+          }
+        ],
+        buttons: [
+          {
+            text: 'cancel',
+            role: 'cancel',
+            handler: () => {
+              console.log('You have canceled');
+            }
+          },
+          {
+            text: 'ok',
+            handler: data => {
+              console.log('input your name', data);
+              this.title = data.yourName;
+            }
+          }
+        ]
+      }
+    );
+    await toast.present();
+  }
 
 }

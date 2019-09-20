@@ -8,6 +8,10 @@
 </ion-header>
 
 <ion-content padding>
+  <ion-button expand="full" (click)="alertToast()">
+    {{ title || 'Undefinited' }}
+  </ion-button>
+  <br>
   <ion-button (click)="presentAlert()" color="primary" expand="full">
     Alert basic
   </ion-button>
