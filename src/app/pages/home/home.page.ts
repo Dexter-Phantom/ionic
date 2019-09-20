@@ -9,14 +9,14 @@ export class HomePage implements OnInit {
 
   componentes: Componente[] = [
     {
+      icon: 'appstore',
+      name: 'action sheet',
+      redirectTo: '/action-sheet'
+    },
+    {
       icon: 'american-football',
       name: 'alert',
       redirectTo: '/alert'
-    },
-    {
-      icon: 'appstore',
-      name: 'action sheet',
-      redirectTo: 'action-sheet'
     }
   ];
 
