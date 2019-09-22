@@ -7,7 +7,7 @@ const routes: Routes = [
   { path: 'alert', loadChildren: './pages/alert/alert.module#AlertPageModule' },
   { path: 'action-sheet', loadChildren: './pages/action-sheet/action-sheet.module#ActionSheetPageModule' },
 ];
-
+// app routing 
 @NgModule({
   imports: [
     RouterModule.forRoot(routes, { preloadingStrategy: PreloadAllModules })
