@@ -284,8 +284,7 @@ export class AlertPage implements OnInit {
           {
             type: 'text',
             placeholder: 'Input your name',
-            name: 'yourName',
-            min: 5
+            name: 'yourName'
           }
         ],
         buttons: [
