@@ -17,6 +17,11 @@ export class HomePage implements OnInit {
       icon: 'american-football',
       name: 'alert',
       redirectTo: '/alert'
+    },
+    {
+      icon: 'beaker',
+      name: 'Avatar',
+      redirectTo: '/avatar'
     }
   ];
 
