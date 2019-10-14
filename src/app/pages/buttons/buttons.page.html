@@ -16,26 +16,44 @@
 </ion-header>
 
 <ion-content padding>
-  <!-- Default -->
-  <ion-button>Default</ion-button>
-
-  <!-- Anchor -->
-  <ion-button href="#">Anchor</ion-button>
-
-  <!-- Colors -->
-  <ion-button color="primary">Primary</ion-button>
-  <ion-button color="secondary">Secondary</ion-button>
-  <ion-button color="tertiary">Tertiary</ion-button>
-  <ion-button color="success">Success</ion-button>
+  <ion-row>
+    <ion-col>
+      <ion-button>Default</ion-button>
+    </ion-col>
+    <ion-col>
+      <ion-button href="#">Anchor</ion-button>
+    </ion-col>
+    <ion-col>
+      <ion-button color="primary" [routerLink]="['/']" routerLinkActive="router-link-active">Primary</ion-button>
+    </ion-col>
+    <ion-col>
+      <ion-button color="secondary" [routerLink]="['/']" routerLinkActive="router-link-active">Secondary</ion-button>
+    </ion-col>
+    <ion-col>
+      <ion-button color="tertiary" [routerLink]="['/']" routerLinkActive="router-link-active">Tertiary</ion-button>
+    </ion-col>
+    <ion-col>
+      <ion-button color="success" [routerLink]="['/']" routerLinkActive="router-link-active">Success</ion-button>
+    </ion-col>
+  </ion-row>
+  
   <ion-button color="warning">Warning</ion-button>
   <ion-button color="danger">Danger</ion-button>
   <ion-button color="light">Light</ion-button>
   <ion-button color="medium">Medium</ion-button>
   <ion-button color="dark">Dark</ion-button>
 
-  <!-- Expand -->
-  <ion-button expand="full" class="marg-20" [routerLink]="['/']" routerLinkActive="router-link-active" >Full Buttom</ion-button>
-  <ion-button expand="block" class="marg-20" routerLinkLink="/">Block Button</ion-button>
+  <!-- Expand and Row -->
+  <ion-row>
+    <ion-col>
+        <ion-button expand="full" class="marg-20" [routerLink]="['/']" routerLinkActive="router-link-active" >Full Buttom</ion-button>    
+    </ion-col>
+    <ion-col>
+        <ion-button expand="block" class="marg-20" routerLinkLink="/">Block Button</ion-button>
+    </ion-col>
+  </ion-row>
+  
+
 
   <!-- Round -->
   <ion-button shape="round">Round Button</ion-button>
