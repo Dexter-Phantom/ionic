@@ -37,6 +37,11 @@ export class HomePage implements OnInit {
       icon: 'checkmark-circle-outline',
       name: 'Check box',
       redirectTo: '/checkbox'
+    },
+    {
+      icon: 'calendar',
+      name: 'Date time',
+      redirectTo: '/date-time'
     }
   ];
 

@@ -1,0 +1,30 @@
+<app-header title="date-time"></app-header>
+
+<ion-content padding>
+  <ion-row>
+    <ion-col>
+      <ion-label>Date time</ion-label>
+      <ion-datetime
+        placeholder="You birthday"
+        [value]="dayNow"
+        cancelText="Cancelar"
+        doneText="aceptar"
+        [(ngModel)]="dayNow "
+        (ionChange)="getNewDate($event)"
+        displayFormat="YYYY MM DD"
+      ></ion-datetime>
+    </ion-col>
+    <ion-col>
+      <ion-label>MMMM</ion-label>
+      <ion-datetime displayFormat="MMMM"  [value]="dayNow" placeholder="Date"></ion-datetime>
+    </ion-col>
+    <ion-col>
+      <ion-label>MM DD YY</ion-label>
+      <ion-datetime displayFormat="MM DD YY" placeholder="Select date"></ion-datetime>
+    </ion-col>
+    <ion-col>
+      <ion-label position="stacked">MMMM YY</ion-label>
+      <ion-datetime displayFormat="YY MM DD" min="1989-06-04" max="2004-08-23" placeholder="Date now"></ion-datetime>
+    </ion-col>
+  </ion-row>
+</ion-content>
