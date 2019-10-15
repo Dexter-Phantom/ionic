@@ -8,6 +8,8 @@ import { Component, OnInit } from '@angular/core';
 export class CardPage implements OnInit {
 
   urlState: string = 'assets/avatar/season_fortnite.jpg';
+  urlState2: string = 'assets/images/battle_fortnite.png';
+  urlState3: string = 'assets/images/Fortnite_battle.png';
 
   constructor() { }
 
