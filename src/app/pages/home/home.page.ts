@@ -32,6 +32,11 @@ export class HomePage implements OnInit {
       icon: 'card',
       name: 'Card',
       redirectTo: '/card'
+    },
+    {
+      icon: 'checkmark-circle-outline',
+      name: 'Check box',
+      redirectTo: '/checkbox'
     }
   ];
 
