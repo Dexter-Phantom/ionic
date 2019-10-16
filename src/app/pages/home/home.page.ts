@@ -47,6 +47,11 @@ export class HomePage implements OnInit {
       icon: 'calendar',
       name: 'Ion fab',
       redirectTo: '/ion-fab'
+    },
+    {
+      icon: 'calendar',
+      name: 'Using services',
+      redirectTo: '/test-client'
     }
   ];
 

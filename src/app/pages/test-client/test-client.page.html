@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/"></ion-back-button>
+    </ion-buttons>
+    <ion-title>test-client</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-card *ngFor="let item of business.articles">
+    <ion-card-title>{{item.source.name}}</ion-card-title>
+    <ion-card-subtitle>{{item.author}}</ion-card-subtitle>
+    <ion-card-content>
+      {{item.title}}
+      <ion-img [src]="item.urlToImage"></ion-img>
+      {{item.description}}
+      {{item.plublishedAt | date: 'medium'}}
+    </ion-card-content>
+  </ion-card>
+</ion-content>
