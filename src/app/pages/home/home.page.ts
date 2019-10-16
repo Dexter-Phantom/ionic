@@ -57,6 +57,11 @@ export class HomePage implements OnInit {
       icon: 'grid',
       name: 'Grid',
       redirectTo: '/grid'
+    },
+    {
+      icon: 'calendar',
+      name: 'Services bitcoin',
+      redirectTo: '/bitcoin'
     }
   ];
 
