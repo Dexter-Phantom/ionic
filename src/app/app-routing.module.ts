@@ -13,6 +13,7 @@ const routes: Routes = [
   { path: 'date-time', loadChildren: './pages/date-time/date-time.module#DateTimePageModule' },
   { path: 'ion-fab', loadChildren: './pages/ion-fab/ion-fab.module#IonFabPageModule' },
   { path: 'test-client', loadChildren: './pages/test-client/test-client.module#TestClientPageModule' },
+  { path: 'grid', loadChildren: './pages/grid/grid.module#GridPageModule' },
 ];
 
 @NgModule({

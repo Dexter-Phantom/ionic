@@ -52,6 +52,11 @@ export class HomePage implements OnInit {
       icon: 'calendar',
       name: 'Using services',
       redirectTo: '/test-client'
+    },
+    {
+      icon: 'grid',
+      name: 'Grid',
+      redirectTo: '/grid'
     }
   ];
 
