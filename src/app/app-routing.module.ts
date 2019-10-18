@@ -17,6 +17,7 @@ const routes: Routes = [
   { path: 'bitcoin', loadChildren: './pages/bitcoin/bitcoin.module#BitcoinPageModule' },
   { path: 'infinite-scroll', loadChildren: './pages/infinite-scroll/infinite-scroll.module#InfiniteScrollPageModule' },
   { path: 'inputs', loadChildren: './pages/inputs/inputs.module#InputsPageModule' },
+  { path: 'forms', loadChildren: './pages/forms/forms.module#FormsPageModule' },
 ];
 
 @NgModule({

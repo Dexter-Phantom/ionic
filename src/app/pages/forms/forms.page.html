@@ -1,0 +1,42 @@
+<app-header title="Forms"></app-header>
+
+<ion-content padding>
+  <ion-list>
+    <ion-item>
+      <ion-label>Login</ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-img src="assets/dexter-bin.png"></ion-img>
+    </ion-item>
+  </ion-list>
+
+  <form #formulario="ngForm" (ngSubmit)="onSubmit()">
+    <ion-list>
+      <ion-item>
+        <ion-label position="floating">Email</ion-label>
+        <ion-input clearInput type="text" name="user" required 
+          pattern="^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$"
+          [(ngModel)]="dataF.user"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">Password</ion-label>
+        <ion-input clearInput type="password" name="password" required
+          min="5" [(ngModel)]="dataF.pass"></ion-input>
+      </ion-item>
+    </ion-list>
+    <ion-row>
+      <ion-col size="12">
+        <ion-button type="submit" color="primary" expand="full" [disabled]="formulario.invalid">Check login</ion-button>
+      </ion-col>
+    </ion-row>
+  </form>
+
+  <ion-row>
+    <ion-col size="12">
+      Show data information: {{formulario.valid}}
+    </ion-col>
+    <ion-col size="12">
+      {{ dataF | json }}
+    </ion-col>
+  </ion-row>
+</ion-content>
