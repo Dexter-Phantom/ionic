@@ -59,9 +59,9 @@ export class HomePage implements OnInit {
       redirectTo: '/grid'
     },
     {
-      icon: 'calendar',
-      name: 'Services bitcoin',
-      redirectTo: '/bitcoin'
+      icon: 'infinite',
+      name: 'Infinity scroll',
+      redirectTo: '/infinite-scroll'
     }
   ];
 

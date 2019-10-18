@@ -15,6 +15,7 @@ const routes: Routes = [
   { path: 'test-client', loadChildren: './pages/test-client/test-client.module#TestClientPageModule' },
   { path: 'grid', loadChildren: './pages/grid/grid.module#GridPageModule' },
   { path: 'bitcoin', loadChildren: './pages/bitcoin/bitcoin.module#BitcoinPageModule' },
+  { path: 'infinite-scroll', loadChildren: './pages/infinite-scroll/infinite-scroll.module#InfiniteScrollPageModule' },
 ];
 
 @NgModule({
