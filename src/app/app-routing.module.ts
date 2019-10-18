@@ -16,6 +16,7 @@ const routes: Routes = [
   { path: 'grid', loadChildren: './pages/grid/grid.module#GridPageModule' },
   { path: 'bitcoin', loadChildren: './pages/bitcoin/bitcoin.module#BitcoinPageModule' },
   { path: 'infinite-scroll', loadChildren: './pages/infinite-scroll/infinite-scroll.module#InfiniteScrollPageModule' },
+  { path: 'inputs', loadChildren: './pages/inputs/inputs.module#InputsPageModule' },
 ];
 
 @NgModule({

@@ -62,6 +62,11 @@ export class HomePage implements OnInit {
       icon: 'infinite',
       name: 'Infinity scroll',
       redirectTo: '/infinite-scroll'
+    },
+    {
+      icon: 'hammer',
+      name: 'Inputs form',
+      redirectTo: '/inputs'
     }
   ];
 
