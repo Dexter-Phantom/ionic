@@ -18,6 +18,7 @@ const routes: Routes = [
   { path: 'infinite-scroll', loadChildren: './pages/infinite-scroll/infinite-scroll.module#InfiniteScrollPageModule' },
   { path: 'inputs', loadChildren: './pages/inputs/inputs.module#InputsPageModule' },
   { path: 'forms', loadChildren: './pages/forms/forms.module#FormsPageModule' },
+  { path: 'item-sliding', loadChildren: './pages/item-sliding/item-sliding.module#ItemSlidingPageModule' },
 ];
 
 @NgModule({

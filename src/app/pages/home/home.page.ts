@@ -72,6 +72,11 @@ export class HomePage implements OnInit {
       icon: 'hammer',
       name: 'Ng Forms',
       redirectTo: '/forms'
+    },
+    {
+      icon: 'list',
+      name: 'Sliding item',
+      redirectTo: '/item-sliding'
     }
   ];
 
