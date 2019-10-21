@@ -17,7 +17,7 @@ export class TestClientPage implements OnInit {
     .subscribe(resp => {
       console.log(resp, 'services');
       this.business = resp;
-    })
+    });
   }
 
 }

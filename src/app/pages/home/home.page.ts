@@ -77,6 +77,11 @@ export class HomePage implements OnInit {
       icon: 'list',
       name: 'Sliding item',
       redirectTo: '/item-sliding'
+    },
+    {
+      icon: 'reorder',
+      name: 'Reorder list',
+      redirectTo: '/list-reorder'
     }
   ];
 
