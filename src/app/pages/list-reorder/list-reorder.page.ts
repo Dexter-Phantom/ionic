@@ -5,6 +5,7 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './list-reorder.page.html',
   styleUrls: ['./list-reorder.page.scss'],
 })
+
 export class ListReorderPage implements OnInit {
 
   heroes: Heroe[] = [
@@ -28,6 +29,18 @@ export class ListReorderPage implements OnInit {
   constructor() { }
 
   ngOnInit() {
+  }
+
+  reorder = (event) => {
+    console.log(event);
+    const itemMove = this.heroes.splice(event.detail.from, 1)[0];
+    console.log(itemMove, 'move');
+    this.heroes.splice(event.detail.to, 0, itemMove);
+    event.detail.complete();
+  }
+
+  valid = () => {
+    console.log(this.heroes);
   }
 
 }
