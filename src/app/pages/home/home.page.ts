@@ -82,6 +82,11 @@ export class HomePage implements OnInit {
       icon: 'reorder',
       name: 'Reorder list',
       redirectTo: '/list-reorder'
+    },
+    {
+      icon: 'refresh-circle',
+      name: 'Loading',
+      redirectTo: '/loading'
     }
   ];
 

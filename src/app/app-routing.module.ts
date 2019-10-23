@@ -20,6 +20,7 @@ const routes: Routes = [
   { path: 'forms', loadChildren: './pages/forms/forms.module#FormsPageModule' },
   { path: 'item-sliding', loadChildren: './pages/item-sliding/item-sliding.module#ItemSlidingPageModule' },
   { path: 'list-reorder', loadChildren: './pages/list-reorder/list-reorder.module#ListReorderPageModule' },
+  { path: 'loading', loadChildren: './pages/loading/loading.module#LoadingPageModule' },
 ];
 
 @NgModule({
