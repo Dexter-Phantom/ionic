@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { MenuController } from '@ionic/angular';
+import { Componente } from '../../interfaces/interfaces';
+import { MenuService } from 'src/app/services/data/menu.service';
 
 @Component({
   selector: 'app-home',
@@ -7,99 +10,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomePage implements OnInit {
 
-  componentes: Componente[] = [
-    {
-      icon: 'appstore',
-      name: 'action sheet',
-      redirectTo: '/action-sheet'
-    },
-    {
-      icon: 'american-football',
-      name: 'alert',
-      redirectTo: '/alert'
-    },
-    {
-      icon: 'beaker',
-      name: 'Avatar',
-      redirectTo: '/avatar'
-    },
-    {
-      icon: 'radio-button-on',
-      name: 'Buttons',
-      redirectTo: '/buttons'
-    },
-    {
-      icon: 'card',
-      name: 'Card',
-      redirectTo: '/card'
-    },
-    {
-      icon: 'checkmark-circle-outline',
-      name: 'Check box',
-      redirectTo: '/checkbox'
-    },
-    {
-      icon: 'calendar',
-      name: 'Date time',
-      redirectTo: '/date-time'
-    },
-    {
-      icon: 'calendar',
-      name: 'Ion fab',
-      redirectTo: '/ion-fab'
-    },
-    {
-      icon: 'calendar',
-      name: 'Using services',
-      redirectTo: '/test-client'
-    },
-    {
-      icon: 'grid',
-      name: 'Grid',
-      redirectTo: '/grid'
-    },
-    {
-      icon: 'infinite',
-      name: 'Infinity scroll',
-      redirectTo: '/infinite-scroll'
-    },
-    {
-      icon: 'hammer',
-      name: 'Inputs form',
-      redirectTo: '/inputs'
-    },
-    {
-      icon: 'hammer',
-      name: 'Ng Forms',
-      redirectTo: '/forms'
-    },
-    {
-      icon: 'list',
-      name: 'Sliding item',
-      redirectTo: '/item-sliding'
-    },
-    {
-      icon: 'reorder',
-      name: 'Reorder list',
-      redirectTo: '/list-reorder'
-    },
-    {
-      icon: 'refresh-circle',
-      name: 'Loading',
-      redirectTo: '/loading'
-    }
-  ];
+  componentes: Componente[] = [];
 
 
-  constructor() { }
+  constructor(private menuCtrl: MenuController) { }
 
   ngOnInit() {
   }
 
-}
+  toggleMenu = () => {
+    this.menuCtrl.toggle();
+  }
 
-interface Componente {
-  icon: string;
-  name: string;
-  redirectTo: string;
 }
