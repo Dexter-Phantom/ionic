@@ -1,0 +1,83 @@
+[
+    {
+      "icon": "appstore",
+      "name": "action sheet",
+      "redirectTo": "/action-sheet"
+    },
+    {
+      "icon": "american-football",
+      "name": "alert",
+      "redirectTo": "/alert"
+    },
+    {
+      "icon": "beaker",
+      "name": "Avatar",
+      "redirectTo": "/avatar"
+    },
+    {
+      "icon": "radio-button-on",
+      "name": "Buttons",
+      "redirectTo": "/buttons"
+    },
+    {
+      "icon": "card",
+      "name": "Card",
+      "redirectTo": "/card"
+    },
+    {
+      "icon": "checkmark-circle-outline",
+      "name": "Check box",
+      "redirectTo": "/checkbox"
+    },
+    {
+      "icon": "calendar",
+      "name": "Date time",
+      "redirectTo": "/date-time"
+    },
+    {
+      "icon": "calendar",
+      "name": "Ion fab",
+      "redirectTo": "/ion-fab"
+    },
+    {
+      "icon": "calendar",
+      "name": "Using services",
+      "redirectTo": "/test-client"
+    },
+    {
+      "icon": "grid",
+      "name": "Grid",
+      "redirectTo": "/grid"
+    },
+    {
+      "icon": "infinite",
+      "name": "Infinity scroll",
+      "redirectTo": "/infinite-scroll"
+    },
+    {
+      "icon": "hammer",
+      "name": "Inputs form",
+      "redirectTo": "/inputs"
+    },
+    {
+      "icon": "hammer",
+      "name": "Ng Forms",
+      "redirectTo": "/forms"
+    },
+    {
+      "icon": "list",
+      "name": "Sliding item",
+      "redirectTo": "/item-sliding"
+    },
+    {
+      "icon": "reorder",
+      "name": "Reorder list",
+      "redirectTo": "/list-reorder"
+    },
+    {
+      "icon": "refresh-circle",
+      "name": "Loading",
+      "redirectTo": "/loading"
+    }
+  ]
+

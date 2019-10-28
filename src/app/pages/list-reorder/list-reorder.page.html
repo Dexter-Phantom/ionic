@@ -1,0 +1,13 @@
+<app-header title="List reorder"></app-header>
+
+<ion-content padding>
+  <ion-list>
+    <ion-reorder-group [disabled]="false" (ionItemReorder)="reorder($event)">
+      <ion-item *ngFor="let item of heroes">
+        <ion-label>{{item.name}}</ion-label>
+        <ion-reorder slot="end"></ion-reorder>
+      </ion-item>
+    </ion-reorder-group>
+  </ion-list>
+  <ion-button (click)="valid()">Check</ion-button>
+</ion-content>
